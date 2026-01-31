@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ca1s6gvy0ly4q"]
+
+[ext_resource type="PackedScene" uid="uid://7c335s5n4k5" path="res://1_UI/UI.tscn" id="1_po3ly"]
+[ext_resource type="Script" uid="uid://b5v78l6f4hymh" path="res://0_TownSquare/town_square.gd" id="1_rx055"]
+
+[node name="TownSquare" type="Node2D" unique_id=432042220]
+script = ExtResource("1_rx055")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1222502314]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera" unique_id=1684061336]
+
+[node name="Ui" parent="Camera/CanvasLayer" unique_id=1835573645 instance=ExtResource("1_po3ly")]
+
+[connection signal="high_scores_button_pressed" from="Camera/CanvasLayer/Ui" to="." method="_on_ui_high_scores_button_pressed"]
+[connection signal="new_game_button_pressed" from="Camera/CanvasLayer/Ui" to="." method="_on_ui_new_game_button_pressed"]

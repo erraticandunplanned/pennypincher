@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb8tdmmg2xevx"
-path="res://.godot/imported/victim_sprites.png-2f36bf27621d0ef230295e2043de113a.ctex"
+uid="uid://rj2hcdgp0gpw"
+path="res://.godot/imported/pilferable_guy.jpg-1c27b7ea1174005a4c7e26ac2849414f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/victim_sprites.png"
-dest_files=["res://.godot/imported/victim_sprites.png-2f36bf27621d0ef230295e2043de113a.ctex"]
+source_file="res://2_Victim/textures/pilferable_guy.jpg"
+dest_files=["res://.godot/imported/pilferable_guy.jpg-1c27b7ea1174005a4c7e26ac2849414f.ctex"]
 
 [params]
 

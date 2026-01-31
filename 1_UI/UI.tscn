@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://7c335s5n4k5"]
+
+[ext_resource type="Texture2D" uid="uid://bpvad1kgqbjkk" path="res://1_UI/working_title.png" id="1_6r06p"]
+[ext_resource type="Script" uid="uid://y1cv3rqa74xf" path="res://1_UI/ui.gd" id="1_b8mow"]
+
+[node name="Ui" type="Control" unique_id=1835573645]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b8mow")
+
+[node name="HorzPadding" type="HBoxContainer" parent="." unique_id=2011697284]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="_spacer" type="Control" parent="HorzPadding" unique_id=741873025]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="VertPadding" type="VBoxContainer" parent="HorzPadding" unique_id=1299972442]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.8
+
+[node name="_spacer" type="Control" parent="HorzPadding/VertPadding" unique_id=1865868885]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Title" type="TextureRect" parent="HorzPadding/VertPadding" unique_id=356708072]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+texture = ExtResource("1_6r06p")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="_spacer2" type="Control" parent="HorzPadding/VertPadding" unique_id=1433093276]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="NewGameButton" type="Button" parent="HorzPadding/VertPadding" unique_id=1503753502]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+text = "New Game"
+
+[node name="_spacer3" type="Control" parent="HorzPadding/VertPadding" unique_id=1018997600]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="HighScoresButton" type="Button" parent="HorzPadding/VertPadding" unique_id=1345686710]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+text = "High Scores"
+
+[node name="_spacer4" type="Control" parent="HorzPadding/VertPadding" unique_id=1156959973]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="_spacer2" type="Control" parent="HorzPadding" unique_id=59719236]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[connection signal="pressed" from="HorzPadding/VertPadding/NewGameButton" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="HorzPadding/VertPadding/HighScoresButton" to="." method="_on_high_scores_button_pressed"]
